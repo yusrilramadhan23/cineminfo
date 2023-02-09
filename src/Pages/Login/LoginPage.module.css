@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Poppins:wght@200;400;600&display=swap');
+
+.login-container{        
+    font-family: "Lexend", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.login-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img-login{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: relative;        
+    border-radius: 10px;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+}
+
+.form-login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 35px;        
+}
+
+.form-login form h1{
+    text-align: center;
+}
+
+.form-login form input{
+    font-family: "Lexend";
+    margin-top: -15px;
+    margin-left: -10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #2c261115;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-login form button{
+    padding: 10px;
+    font-family: "Lexend";
+    width: 100%;
+    cursor: pointer;
+    background-color: #03ac0e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.form-login table{
+    margin-left: -20px;
+}
+
+.form-login table th span{
+    font-weight: normal;
+    margin-left: -5rem;
+}
+
+.form-login form button:hover{
+    background-color: #12883d;
+    transition: 1s ease background-color;
+}
+
+.form-login form button a{
+    text-decoration: none;
+    color: #fff;
+}
