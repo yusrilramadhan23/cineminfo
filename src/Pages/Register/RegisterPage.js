@@ -16,16 +16,16 @@ const RegisterPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(email === ""){
+    if(name === ""){
+      toast.error("Tambahkan Nama !")
+    }else if(email === ""){
       toast.error("Tambahkan Email !")
     }else if(!email_validation.test(email)){
       toast.error("email tidak cocok, coba lagi")
-    }else if(name === ""){
-      toast.error("Tambahkan Nama !")
     }else if(password === ""){
       toast.error("Tambahkan Password !")
     } else if(!password_validation.test(password)){
-      toast.error("Tambahkan minimal 8 karakter password")
+      toast.error("Tambahkan minimal 8 karakter password dan gunakan karakter unik")
     } else if(confirmPassword === ""){
       toast.error("Tambahkan Konfirmasi Password !")
     } else if(confirmPassword !== password){
@@ -35,6 +35,7 @@ const RegisterPage = () => {
       localStorage.setItem("email", email)
       localStorage.setItem("password", password)
       localStorage.setItem("confirm password", confirmPassword)
+      localStorage.setItem("daftar", email)
       toast.success("User saved !")
       navigate("/login")
     }

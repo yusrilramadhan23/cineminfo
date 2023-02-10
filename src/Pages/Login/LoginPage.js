@@ -22,9 +22,10 @@ const LoginPage = () => {
     }else if(password === ""){
       toast.error("Tambahkan Password !")
     }else if(email === localEmail && password === localPassword){
-      localStorage.setItem("email", email)
+      localStorage.setItem("daftar", email)
       toast.success("Berhasil login")
       navigate("/dashboard")
+      window.location.reload()
     }else{
       toast.error("Pastikan email dan password benar")
     }    
