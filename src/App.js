@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RegisterPage from './Pages/Register/RegisterPage';
 import LoginPage from "./Pages/Login/LoginPage";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Navbar from "./Components/Navbar/Navbar";
+import DetailPage from "./Pages/DetailPage/DetailPage";
+import Profile from "./Pages/Profile/Profile";
+
 function App() {
   return (
     <>      
@@ -13,16 +15,17 @@ function App() {
         position = "top-center"
         autoClose= {2000}
         closeOnClick
-        pauseOnHover
-        
+        pauseOnHover        
       />
+      
       <Router>
         <Routes>
           <Route path="/" exact element = {<RegisterPage />} />
+          <Route path="/movie/:movieId" exact element = {<DetailPage />} />
           <Route path="/login" exact element = {<LoginPage />} />
           <Route path="/register" exact element = {<RegisterPage />} />
           <Route path="/dashboard" exact element = {<Dashboard />} />
-          <Route path="/navbar" exact element = {<Navbar />} />
+          <Route path="/profile" exact element = {<Profile />} />
         </Routes>    
       </Router>
     </>

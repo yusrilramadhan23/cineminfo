@@ -1,0 +1,117 @@
+.detail-container{
+    width: 100%;
+    height: 100%;
+    background-color: #000;    
+    color: #fff;
+}
+
+.detail-container a{
+    position: absolute;
+    margin: 12px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px;    
+    z-index: 3;
+}
+
+.detail-container a:hover{
+    scale: 1.5;
+    transition: .5s ease scale;
+}
+
+.detail-container .backdrop-img{
+    width: 100%;    
+    height: 120vh;
+    position: absolute;
+    filter: brightness(25%);
+    z-index: 1;
+}
+
+.detail-content{
+    display: flex;    
+    width: 100%;  
+    height: 100%;
+    gap: 20px;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.detail-content-left .poster-img{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 70%;
+}
+
+.detail-content .detail-content-left span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.detail-content .detail-content-right .p-tagline{
+    font-style: italic;
+}
+
+.detail-content-right {
+    width: 100%;
+    padding-right: 5%;
+}
+
+@media screen and (max-width:700px){
+    .detail-content-left .poster-img{
+        border: 2px solid #fff;
+        border-radius: 5px;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:600px){    
+    .detail-content{
+        display: flex;        
+        width: 100%;  
+        height: 100%;               
+        padding: 50px;
+        position: absolute;        
+        z-index: 2;
+    }
+
+    .detail-content-left .poster-img{
+        border: 2px solid #fff;
+        border-radius: 5px;
+        height: 50%;
+    }
+
+    .detail-content-left p{
+        font-size: 12px;
+    }    
+
+    .detail-content .detail-content-left span{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .detail-content-right{
+        padding-right: 15%;
+    }
+
+    .detail-content-right h1{
+        font-size: 18px;
+    }
+
+    .detail-content-right h2{
+        font-size: 18px;
+    }
+
+    .detail-content-right p{
+        font-size: 12px;
+    }
+
+    @media screen and (max-width:500px){
+        .detail-content-left .poster-img{
+            border: 2px solid #fff;
+            border-radius: 5px;
+            height: 35%;
+        }
+    }
+}

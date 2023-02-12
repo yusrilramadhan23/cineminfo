@@ -1,0 +1,131 @@
+.dashboard-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+
+}
+
+.dashboard-container .search-movie{
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    height: 5vh;    
+    margin-top: 20px;
+}
+
+.dashboard-container .icon-input{
+    position: absolute;
+    right: 0;
+    font-size: 20px;    
+    margin-top: 22.5px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    margin-right: 22px;           
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-container .title-content{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;    
+}
+
+.dashboard-container .title-content p{
+    font-size: 24px; 
+}
+
+.dashboard-container .title-content span{
+    color: #03ac0e;
+    font-weight: bold;
+}
+
+.dashboard-container .content-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+table {
+    width: 100%;
+    margin-top: 24px;
+    border: 1px solid #e0e0e0;
+    border-collapse: separate !important;
+    border-spacing: 0px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px #e0e0e0;
+}
+
+table th {
+    background-color: #f5f5f5;
+    padding: 14px 16px 14px 16px;
+    color: #000000f5;
+    font-weight: 500;
+    font-size: 0.874rem;
+    text-align: left;
+}
+
+table td {
+    padding: 14px 16px 14px 16px;
+    color: #404040;
+    font-weight: 400;
+    background-color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+table td a{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease .5s;
+}
+
+table td a:hover{
+    color: #000;
+    border-color: #000;
+}
+
+table td.end-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Pagination-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 15px;  
+}
+
+.Pagination-content .back-btn{
+    margin-right: 15px;
+    border: none;
+    border: 2px solid #e0e0e0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Pagination-content .back-btn:hover{
+    scale: 1.5;
+}
+
+.Pagination-content .next-btn{
+    margin-left: 15px;
+    border: none;
+    border: 2px solid #e0e0e0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Pagination-content .next-btn:hover{
+    scale: 1.5;
+}
