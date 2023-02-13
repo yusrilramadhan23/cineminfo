@@ -83,7 +83,7 @@ function Dashboard() {
                                 <p className={style.id}>{movie.id}</p>                                
                                 <div className={style["d-flex"]}>
                                     <p className={style.label}>Title</p>
-                                    <p><Link className={style.value}>
+                                    <p><Link to={`/movie/${movie.id}`} className={style.value}>
                                         {movie.title}
                                     </Link></p>
                                 </div>
