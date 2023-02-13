@@ -22,10 +22,11 @@
 
 .detail-container .backdrop-img{
     width: 100%;    
-    height: 100%;
-    position: absolute;
+    height: 100%;    
+    position: fixed;
     filter: brightness(25%);
     z-index: 1;    
+    object-fit: cover;
 }
 
 .detail-content{
