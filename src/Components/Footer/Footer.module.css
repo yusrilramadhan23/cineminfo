@@ -2,7 +2,7 @@
     border-top: 2px solid #fff;
     background-color: #03ac0e;
     width: 100%;
-    height: 14vh;    
+    height: 14vh;        
 }
 
 .footer-content{
@@ -16,7 +16,7 @@
     margin-top: 25px;        
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 45px;
+    margin-top: 35px;
 }
 
 a{
@@ -36,15 +36,5 @@ a:hover{
     gap: 20px;
     font-size: 18px;
     margin-right: 20px;
-    margin-top: 45px;    
-}
-
-@media screen and(max-width:640px){
-    .footer-container .footer-content p{       
-        
-    }
-
-    .footer-container .footer-content ul{
-        
-    }
+    margin-top: 35px;    
 }

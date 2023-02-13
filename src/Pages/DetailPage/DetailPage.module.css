@@ -21,8 +21,8 @@
 }
 
 .detail-container .backdrop-img{
-    width: 110%;    
-    height: 120%;
+    width: 100%;    
+    height: 100%;
     position: absolute;
     filter: brightness(25%);
     z-index: 1;    
@@ -33,16 +33,19 @@
     width: 100%;  
     height: 100%;
     gap: 20px;
-    padding: 50px;
     position: absolute;
     top: 0;
     z-index: 2;
 }
 
+.detail-content-left{
+    padding: 10px;
+}
+
 .detail-content-left .poster-img{
     border: 2px solid #fff;
     border-radius: 5px;
-    height: 70%;
+    height: 70%;    
 }
 
 .detail-content .detail-content-left span{
@@ -68,15 +71,6 @@
 }
 
 @media screen and (max-width:600px){    
-    .detail-content{
-        display: flex;        
-        width: 100%;  
-        height: 100%;               
-        padding: 50px;
-        position: absolute;        
-        z-index: 2;
-    }
-
     .detail-content-left .poster-img{
         border: 2px solid #fff;
         border-radius: 5px;
@@ -108,11 +102,19 @@
         font-size: 12px;
     }
 
-    @media screen and (max-width:500px){
+    @media screen and (max-width:450px){
         .detail-content-left .poster-img{
             border: 2px solid #fff;
             border-radius: 5px;
-            height: 35%;
+            height: 25%;
+        }
+    }
+
+    @media screen and (max-width:350px){
+        .detail-content-left .poster-img{
+            border: 2px solid #fff;
+            border-radius: 5px;
+            height: 20%;
         }
     }
 }
