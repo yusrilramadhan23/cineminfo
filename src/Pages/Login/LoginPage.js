@@ -25,8 +25,7 @@ const LoginPage = () => {
     }else if(email === localEmail && password === localPassword){
       localStorage.setItem("daftar", email)
       toast.success("Berhasil login")
-      navigate("/dashboard")
-      window.location.reload()
+      navigate("/dashboard")      
     }else{
       toast.error("Pastikan email dan password benar")
     }    
@@ -44,12 +43,16 @@ const LoginPage = () => {
             <input className={style["input-column"]} type="email" value={email} name="email" id="email" placeholder="Masukkan Email" onChange={e => setEmail(e.target.value)} required/><br />
             <label>Kata Sandi</label><br />
             <input className={style["input-column"]} type="password" value={password} name="password" id="password" placeholder="Masukkan Kata Sandi" onChange={e => setPassword(e.target.value)} required/><br />
-            <table>
+            {/* <table>
               <tr>
                   <th><input className={style["input-column"]} type="checkbox" value={checked} onChange={setChecked}/></th>
                   <th><span>Remember me</span></th>
               </tr>
-            </table>            
+            </table> */}
+            <div className={style["remember-me"]}>
+              <input className={style["input-column"]} type="checkbox" value={checked} onChange={setChecked}/>
+              <span>Remember me</span>
+            </div>            
             <br />           
             <button className={style["btn-login"]} type="submit" onClick={handleSubmit}><span>Login</span></button>
             <p>Belum memiliki akun ? <Link to= "/register" className={style["to-register"]}>daftar disini</Link></p>            

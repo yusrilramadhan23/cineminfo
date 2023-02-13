@@ -82,11 +82,30 @@
 
 .form-login table{
     margin-left: -20px;
+    z-index: 999;
 }
 
 .form-login table th span{
     font-weight: normal;
     margin-left: -5rem;
+}
+
+.form-login .remember-me{
+    display: flex;    
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form-login .remember-me .input-column{
+    width: 5%;
+    margin-top: 8px;    
+    background-color: #fff;
+}
+
+.form-login .remember-me span{
+    width: 50%;
+    margin-top: 5px;    
+    margin-left: 10px;
 }
 
 .form-login form button:hover{
