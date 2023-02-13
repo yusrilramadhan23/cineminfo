@@ -7,6 +7,7 @@ import LoginPage from "./Pages/Login/LoginPage";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import DetailPage from "./Pages/DetailPage/DetailPage";
 import Profile from "./Pages/Profile/Profile";
+import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/register" exact element = {<RegisterPage />} />
           <Route path="/dashboard" exact element = {<Dashboard />} />
           <Route path="/profile" exact element = {<Profile />} />
+          <Route path="*" exact element = {<NotFoundPage />} />
         </Routes>    
       </Router>
     </>
