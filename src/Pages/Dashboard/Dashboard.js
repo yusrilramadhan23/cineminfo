@@ -30,9 +30,10 @@ function Dashboard() {
   const SearchMovie = async(q) => {
     if(q.length < 3){
       const query = await GetSearchMovie(q)
-      setPopularMovies(query.results)
+      setPopularMovies(query.results)      
     }
   }
+
   if(popularMovie === "Loading" || !popularMovie || popularMovie.length === 0){
     return(
       <Loading />      
@@ -53,7 +54,7 @@ function Dashboard() {
             <button className={style["icon-input"]}><AiOutlineSearch /></button>
           </div>          
           <div className={style["content-table"]}>
-            <table>
+            <table className={style["table"]}>
               <tbody>
                 <tr>
                   <th>id</th>
@@ -75,6 +76,39 @@ function Dashboard() {
                 })}
               </tbody>
             </table>
+            <div className={style["mobile-table"]}>
+                    {popularMovie.map((movie) => {
+                        return (
+                            <div key={movie.id} className={style.row}>
+                                <p className={style.id}>{movie.id}</p>                                
+                                <div className={style["d-flex"]}>
+                                    <p className={style.label}>Title</p>
+                                    <p><Link className={style.value}>
+                                        {movie.title}
+                                    </Link></p>
+                                </div>
+                                <div className={style["d-flex"]}>
+                                    <p className={style.label}>Year</p>
+                                    <p className={style.value}>
+                                        {movie.release_date}
+                                    </p>
+                                </div>
+                                <div className={style["d-flex"]}>
+                                    <p className={style.label}>Score</p>
+                                    <p className={style.value}>
+                                        {movie.vote_average}/10
+                                    </p>
+                                </div>
+                                <div className={style["d-flex"]}>
+                                    <p className={style.label}>Popularity</p>
+                                    <p className={style.value}>
+                                        {movie.popularity}
+                                    </p>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
           </div>
           <div className={style["Pagination-content"]}>
             <button 

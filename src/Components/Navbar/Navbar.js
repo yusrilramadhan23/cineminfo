@@ -20,13 +20,13 @@ const Navbar = () => {
     <nav>
         <div className="navbar">
             <h1 className="navbar-title">Cineminfo</h1>
-            <div className={`nav-items ${isOpen && "open"}`}>
+            <div className="nav-items">
               <p><AiOutlineUser /><span>{localStorage.getItem("name")}</span></p>
               <p className="logout" onClick={Logout}><HiOutlineLogout/></p>                           
             </div>
-            <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+            {/* <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
               <div className="hamburger"></div>
-            </div>
+            </div> */}
         </div>
     </nav>
   )

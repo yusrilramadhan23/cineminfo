@@ -44,8 +44,18 @@
     padding: 35px;        
 }
 
+.form-register .logo-register{
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    top: 0;
+    margin-top: -105px;        
+    margin-left: 40px;
+}
+
 .form-register form h1{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .form-register form input{
@@ -75,4 +85,15 @@
 .form-register form button:hover{
     background-color: #12883d;
     transition: 1s ease background-color;
+}
+
+.form-register form p .login{
+    color: #000;
+    font-weight: bold;    
+}
+
+.form-register form p .login:hover{
+    color: #000;
+    font-weight: bold; 
+    text-decoration: underline;   
 }

@@ -41,8 +41,18 @@
     padding: 35px;        
 }
 
+.form-login .logo-login{
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    top: 0;
+    margin-top: -75px;        
+    margin-left: 40px;
+}
+
 .form-login form h1{
     text-align: center;
+    text-transform: uppercase;
 }
 
 .form-login form input{
@@ -83,7 +93,11 @@
     transition: 1s ease background-color;
 }
 
-.form-login form button a{
+.form-login form .to-register{
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+.form-login form .to-register:hover{
+    text-decoration: underline;   
 }

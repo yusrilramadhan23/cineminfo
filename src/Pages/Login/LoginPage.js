@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import style from './LoginPage.module.css'
 import background from "../../Assets/background-login.jpg"
+import logo from "../../Assets/Cineminfo.svg"
 
 const LoginPage = () => {
 
@@ -37,7 +38,8 @@ const LoginPage = () => {
         <img src={background} alt="" className={style["img-login"]}/>
         <div className={style["form-login"]}>
           <form>
-            <h1>Login</h1>
+            <img src={logo} alt="" className={style["logo-login"]}/>      
+            <h1>Login</h1>      
             <label>Email</label><br />
             <input className={style["input-column"]} type="email" value={email} name="email" id="email" placeholder="Masukkan Email" onChange={e => setEmail(e.target.value)} required/><br />
             <label>Kata Sandi</label><br />
@@ -50,7 +52,7 @@ const LoginPage = () => {
             </table>            
             <br />           
             <button className={style["btn-login"]} type="submit" onClick={handleSubmit}><span>Login</span></button>
-            <p>Belum memiliki akun ? <Link to= "/register">daftar disini</Link></p>            
+            <p>Belum memiliki akun ? <Link to= "/register" className={style["to-register"]}>daftar disini</Link></p>            
           </form>
         </div>                  
       </div>

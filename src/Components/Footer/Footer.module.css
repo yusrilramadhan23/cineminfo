@@ -14,9 +14,9 @@
 
 .footer-content p{
     margin-top: 25px;        
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 20px;
-    margin-top: 32px;
+    margin-top: 45px;
 }
 
 a{
@@ -34,7 +34,17 @@ a:hover{
     list-style: none;
     display: flex;
     gap: 20px;
-    font-size: 24px;
+    font-size: 18px;
     margin-right: 20px;
-    margin-top: 34px;
+    margin-top: 45px;    
+}
+
+@media screen and(max-width:640px){
+    .footer-container .footer-content p{       
+        
+    }
+
+    .footer-container .footer-content ul{
+        
+    }
 }

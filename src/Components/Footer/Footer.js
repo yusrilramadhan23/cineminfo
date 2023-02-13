@@ -7,8 +7,7 @@ import {BsGithub, BsInstagram, BsLinkedin} from 'react-icons/bs'
 const Footer = () => {
   return (
     <div className={style["footer-container"]}>
-        <div className={style["footer-content"]}>
-            
+        <div className={style["footer-content"]}>            
             <p><Link to={"/profile"}>Tentang saya</Link> || &copy; 2023 Cineminfo</p>
             <ul>
                 <li><Link to={"https://www.linkedin.com/in/yusril-ramadhan-83a222221/"}><BsLinkedin /></Link></li>

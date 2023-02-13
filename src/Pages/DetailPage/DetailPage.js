@@ -30,7 +30,8 @@ function DetailPage() {
         <>              
             <div className={style["detail-container"]}>
                 <Link
-                    to={"/dashboard"}                    
+                    to={"/dashboard"}    
+                    className={style["icon"]}                
                 >
                     <MdOutlineArrowBackIos />
                 </Link>

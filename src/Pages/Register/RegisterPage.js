@@ -1,8 +1,10 @@
 import React, { useState } from "react"
-import style from "./RegisterPage.module.css"
-import background from "../../Assets/background-login.jpg"
 import {toast} from "react-toastify"
 import { Link, useNavigate } from "react-router-dom"
+
+import style from "./RegisterPage.module.css"
+import background from "../../Assets/background-login.jpg"
+import logo from "../../Assets/Cineminfo.svg"
 
 const RegisterPage = () => {
   const[name, setName] = useState("")
@@ -46,6 +48,7 @@ const RegisterPage = () => {
             <img src={background} alt="" className={style["img-register"]}/>
             <div className={style["form-register"]}>
                 <form>
+                    <img src={logo} alt="" className={style["logo-register"]}/>  
                     <h1>Daftar</h1>
                     <label>Username</label><br />
                     <input className={style["input-column"]} type="text" value={name} name="name" id="name" placeholder="Masukkan Nama" onChange={e => setName(e.target.value)} required/><br />
@@ -56,7 +59,7 @@ const RegisterPage = () => {
                     <label>Konfirmasi Kata Sandi</label><br />
                     <input className={style["input-column"]} type="password" value={confirmPassword} name="confirm password" id="confirm-password" placeholder="Konfirmasi Kata Sandi" onChange={e => setConfirmPassword(e.target.value)} required/><br />                    
                     <button type="submit" className={style["btn-register"]} onClick={handleSubmit}>Daftar</button>           
-                    <p>Sudah memiliki akun ? <Link to= "/login">Masuk disini</Link></p> 
+                    <p>Sudah memiliki akun ? <Link to= "/login" className={style["login"]}>Masuk disini</Link></p> 
                 </form>
             </div>                  
         </div>
